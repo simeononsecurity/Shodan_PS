@@ -23,12 +23,12 @@ Init
 function Get-ShodanHoneyScore {
 param(
 [Parameter(Mandatory=$false, Position=0)]
-[string]$global:api,
+[string]$api,
 [Parameter(Mandatory=$true, Position=1)]
 [string]$ip
 )
-$apistring="?key=$global:api"
-If (!$global:api){
+$apistring="?key=$api"
+If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$ip){
