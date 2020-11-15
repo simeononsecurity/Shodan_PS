@@ -23,11 +23,11 @@ Init
 function Set-ShodanScanIP {
 param(
 [Parameter(Mandatory=$false, Position=0)]
-[string]$api,
+[string]$global:api,
 [Parameter(Mandatory=$true, Position=1)]
 [string]$ips
 )
-If (!$api){
+If (!$global:api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$ips){

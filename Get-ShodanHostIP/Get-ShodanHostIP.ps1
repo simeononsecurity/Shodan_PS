@@ -23,13 +23,13 @@ Init
 function Get-ShodanHostIP {
 param(
 [Parameter(Mandatory=$false, Position=0)]
-[string]$api,
+[string]$global:api,
 [Parameter(Mandatory=$true, Position=1)]
 [string]$ip,
 [Parameter(Mandatory=$false, Position=2)]
 $minify
 )
-$apistring="?key=$api"
+$apistring="?key=$global:api"
 $minify = [System.Convert]::ToBoolean($minify)
 If ($minify -eq $true -or $minify -eq 1){
     $minifystring="&minify=true"
@@ -37,7 +37,7 @@ If ($minify -eq $true -or $minify -eq 1){
     Write-Host "You chose full output"
     $minifystring=""
 }
-If (!$api){
+If (!$global:api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$ip){

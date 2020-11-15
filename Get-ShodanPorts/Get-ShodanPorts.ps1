@@ -23,10 +23,10 @@ Init
 function Get-ShodanPorts {
 param(
 [Parameter(Mandatory=$true, Position=0)]
-[string]$api
+[string]$global:api
 )
-$apistring="?key=$api"
-If (!$api){
+$apistring="?key=$global:api"
+If (!$global:api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     (Invoke-WebRequest "https://api.shodan.io/shodan/ports$apistring").content -Split {$_ -eq '[' -or $_ -eq ']'} | ConvertFrom-String -Delimiter "," 

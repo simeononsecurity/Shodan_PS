@@ -23,7 +23,7 @@ Init
 function Get-ShodanHostSearch {
 param(
 [Parameter(Mandatory=$false, Position=0)]
-[string]$api,
+[string]$global:api,
 [Parameter(Mandatory=$true, Position=1)]
 [string]$query,
 [Parameter(Mandatory=$false, Position=2)]
@@ -31,7 +31,7 @@ param(
 [Parameter(Mandatory=$false, Position=3)]
 $minify
 )
-$apistring="?key=$api"
+$apistring="?key=$global:api"
 $querystring = "&query=$query"
 $minify = [System.Convert]::ToBoolean($minify)
 If ($minify -eq $true -or $minify -eq 1){
@@ -46,7 +46,7 @@ If (!$facet){
 }Else{
     $facetstring = "&facet=$facet"
 }
-If (!$api){
+If (!$global:api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$query){
