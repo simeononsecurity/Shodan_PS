@@ -52,8 +52,7 @@ If (!$api){
     If (!$query){
         Write-Host "Please specify your query with -Query [string]"
     }Else {
-        Write-Host "$apistring$querystring$facetstring$minifystring"
-        #(Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
     }
 }
 }
