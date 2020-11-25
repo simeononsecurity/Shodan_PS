@@ -8,7 +8,18 @@ This is the IP that the outside world sees you as; for example, if you are at ho
 ## Prerequisites
 * You will have needed to have downloaded or cloned the scripts to your computer.
 
-* You will need to run a powershell window as administrator.
+* You will need to run a PowerShell window as administrator.
+
+By right clicking the PowerShell icon on the Desktop and selecting Run as Administrator from dropdown menu.
+
+![Right click the powershell icon on the Desktop and select run as administrator from dropdown menu](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/RcRunAsAdmin.gif)
+
+**OR**
+
+By typing p (or however many characters it takes PowerShell to show up) into the searchbar and clicking on Run as Administrator.
+
+![type p in the search bar and when powershell comes up click on run as administrator](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/SearchBarRunAsAdmin.gif)
+
 
 * You will need to be in the directory that you downloaded the scripts to. 
 
