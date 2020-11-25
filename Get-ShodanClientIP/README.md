@@ -69,10 +69,9 @@ PS C:\Users\exampleuser\Documents\GitHub\Shodan_PS>
 **Step 5.** Cleanup (optional)
 Since you have now made some changes that could potentially be a security issue, here's how to clean up after running the command.
 
-You ran the command with the api key in the powershell window instead of handling another way, so it will show up in your powershell history.
-To mitigate this you can go into your [shodan account](https://account.shodan.io/) and hit the reset API key to take care of this.
+While PowerShell only saves history for the current session, if you are worried about your api being exposed you can go into your [shodan account](https://account.shodan.io/) and hit the reset API key to take care of this.
 
-In step 2 you changed your powershell execution policy in a way that would let potentialy malicious powershell scripts to execute. Run the following command to set the policy back to
+In step 2 you changed your PowerShell execution policy in a way that would let potentialy malicious PowerShell scripts to execute. Run the following command to set the policy back to
 the default of Restricted and enter y to select that Yes you want to change the policy.
 ```
 PS C:\Users\exampleuser\Documents\GitHub\Shodan_PS> Set-ExecutionPolicy Restricted
