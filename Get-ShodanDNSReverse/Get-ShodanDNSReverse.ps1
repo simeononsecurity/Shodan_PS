@@ -20,7 +20,7 @@
 Init
 
 #>
-function Get-ShodanDNSResolve {
+function Get-ShodanDNSReverse {
 param(
 [Parameter(Mandatory=$false, Position=0)]
 [string]$api,
