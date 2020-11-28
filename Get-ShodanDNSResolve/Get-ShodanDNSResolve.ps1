@@ -29,10 +29,10 @@ $apistring="&key=$api"
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
-    If (!$domain){
+    If (!$domains){
         Write-Host "Please specify an domain address with -domain [string]"
     }Else {
-        (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/resolve?hostnames=$domain$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Domain, IP
+        (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/resolve?hostnames=$domains$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Domain, IP
     }
 }
 }
