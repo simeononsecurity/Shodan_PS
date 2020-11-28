@@ -8,9 +8,10 @@ Query Credits are used when you download data via the website, CLI or API (what 
 Since we are using the API it is important to note that query credits are deducted if:
    1. A search filter is used
    2. Page 2 or beyond is requested
+   
 The credits renew at the start of the month and 1 credit lets you download 100 results.
 
-As for scan credits, 1 scan credit lets you scan 1 IP, they also renew at the start of the month.
+As for scan credits, 1 scan credit lets you scan 1 IP, and they also renew at the start of the month.
 
 Please view the Shodan Help Center [HERE](https://help.shodan.io/the-basics/credit-types-explained) for full details.
 ## Prerequisites
