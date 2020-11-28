@@ -21,6 +21,7 @@ Init
 
 #>
 function Get-ShodanDNSResolve {
+#Requires -Version 6.0
 param(
 [string]$api,
 [string]$domains
