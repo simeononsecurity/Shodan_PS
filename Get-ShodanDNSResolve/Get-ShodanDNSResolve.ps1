@@ -14,7 +14,7 @@
 
 .PROJECTURI https://github.com/simeononsecurity/Shodan_PS
 
-.DESCRIPTION "Look up the IP address for the provided list of hostnames. Ex: Get-ShodanDNSResolve -domain google.com,bing.com -API"
+.DESCRIPTION "Look up the IP address for the provided list of hostnames. Ex: Get-ShodanDNSResolve -domains "google.com,bing.com" -API"
 
 .RELEASENOTES
 Init
@@ -30,7 +30,7 @@ If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$domains){
-        Write-Host "Please specify an domain address with -domain [string]"
+        Write-Host "Please specify one or more domain address with -domains [string]"
     }Else {
         (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/resolve?hostnames=$domains$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Domain, IP
     }
