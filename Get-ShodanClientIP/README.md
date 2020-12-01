@@ -7,6 +7,13 @@ This is the IP that the outside world sees you as; for example, if you are at ho
 
 ## Prerequisites
 * You will have needed to have downloaded or cloned the scripts to your computer.
+![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/download.gif)
+
+For this example we will be cloning the repo within Git Bash, after clicking on the clipboard icon as seen above, we can type git clone and right click the Git Bash window to select paste from the dropdown menu:
+```
+exampleuser@exampleComputer MINGW64 ~/Documents/Github git clone https://github.com/simeononsecurity/Shodan_PS.git
+```
+For detailed instructions on cloning please view [the github documentation.](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 * You will need to run a PowerShell window as administrator.
 
