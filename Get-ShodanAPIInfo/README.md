@@ -88,8 +88,6 @@ Data              Value
 
 Since you have now made some changes that could potentially be a security issue, here's how to clean up after running the command.
 
-While PowerShell only saves history for the current session, if you are worried about your api key being exposed you can go into your [shodan account](https://account.shodan.io/) and hit the reset API key to take care of this.
-
 In step 2 you changed your PowerShell execution policy in a way that would let potentially malicious PowerShell scripts to execute. Run the following command to set the policy back to
 the default of Restricted and enter y to select that Yes you want to change the policy.
 ```
