@@ -17,13 +17,13 @@ For detailed instructions on cloning please view [the github documentation.](htt
 
 * You will need to run a PowerShell window as administrator.
 
-By right clicking the PowerShell icon on the Desktop and selecting Run as Administrator from dropdown menu.
+By right clicking the PowerShell icon on the Desktop and selecting Run as Administrator from the dropdown menu.
 
 ![Right click the powershell icon on the Desktop and select run as administrator from dropdown menu](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/RcRunAsAdmin.gif)
 
 **OR**
 
-By typing p (or however many characters it takes PowerShell to show up) into the searchbar and clicking on Run as Administrator.
+By typing p (or however many characters it takes PowerShell to show up) into the search bar and clicking on Run as Administrator.
 
 ![type p in the search bar and when powershell comes up click on run as administrator](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/SearchBarRunAsAdmin.gif)
 
@@ -38,7 +38,7 @@ PS C:\Users\exampleuser\Documents\GitHub\Shodan_PS>
 
 ```
 
-## Useage
+## Usage
 
 **Step 1.** (If you are on a Windows server you can skip ahead to the next step)
 
@@ -76,9 +76,8 @@ PS C:\Users\exampleuser\Documents\GitHub\Shodan_PS>
 **Step 5.** Cleanup (optional)
 Since you have now made some changes that could potentially be a security issue, here's how to clean up after running the command.
 
-While PowerShell only saves history for the current session, if you are worried about your api key being exposed you can go into your [shodan account](https://account.shodan.io/) and hit the reset API key to take care of this.
 
-In step 2 you changed your PowerShell execution policy in a way that would let potentialy malicious PowerShell scripts to execute. Run the following command to set the policy back to
+In step 2 you changed your PowerShell execution policy in a way that would let potentially malicious PowerShell scripts to execute. Run the following command to set the policy back to
 the default of Restricted and enter y to select that Yes you want to change the policy.
 ```
 PS C:\Users\exampleuser\Documents\GitHub\Shodan_PS> Set-ExecutionPolicy Restricted
@@ -90,3 +89,5 @@ change the execution policy?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): y
 ```
 **Note:** You will still be able to run the scripts as long as you keep this powershell window open since you already imported the modules.
+
+
