@@ -16,12 +16,12 @@ Since we are using the API it is important to note that query credits are deduct
 
 ## Download
 <a name="Download"></a>
-* You will need to download or clone the scripts to your computer.
-![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select the copy icon next to the clone url](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/download.gif)
+You will need to clone or download the scripts to your computer.
+
 
 You can use the Code dropdown menu on this repo page by scrolling up, or just copy and paste the following link:  [https://github.com/simeononsecurity/Shodan_PS.git](https://github.com/simeononsecurity/Shodan_PS.git)
 
-![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select Download Zip option](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/downloadzip.gif)
+![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select the copy icon next to the clone url](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/download.gif)
 
 For this example we will be cloning the repo within Git Bash, after clicking on the clipboard icon as seen above, we can type git clone and right click the Git Bash window to select paste from the dropdown menu:
 ```
@@ -38,6 +38,8 @@ Once you have the files, you need to copy the files to C:\Program Files\WindowsP
 
 You can use the Code dropdown menu on this repo page by scrolling up, or just click on the following link:
 [https://github.com/simeononsecurity/Shodan_PS/archive/main.zip](https://github.com/simeononsecurity/Shodan_PS/archive/main.zip)
+![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select Download Zip option](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/downloadzip.gif)
+
 Unzip main.zip by right clicking on the file and selecting extract here from the dropdown menu.
 
 Once you have the files, you need to copy the files to C:\Program Files\WindowsPowerShell\Modules, doing this will prompt dialog saying that access is denied, click continue to finish copying the files to this location and then proceed to the installation instructions [here](#Install)
@@ -51,10 +53,10 @@ Once you have the files, you need to copy the files to C:\Program Files\WindowsP
 <a name="Install"></a>
 
 
-- Install all the modules
-You will need to run a PowerShell window as administrator.
+To install the modules You will need to run a PowerShell window as administrator.
+There are two ways of doing this:
 
-By right clicking the PowerShell icon on the Desktop and selecting Run as Administrator from the dropdown menu.
+The first way is by right clicking the PowerShell icon on the Desktop and selecting Run as Administrator from the dropdown menu.
 
 ![Right click the powershell icon on the Desktop and select run as administrator from dropdown menu](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/RcRunAsAdmin.gif)
 
