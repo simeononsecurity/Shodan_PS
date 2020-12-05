@@ -15,6 +15,7 @@ Since we are using the API it is important to note that query credits are deduct
    Please view the Shodan Help Center [HERE](https://help.shodan.io/the-basics/credit-types-explained) for full details.
 
 ## Download
+<a name="Download"></a>
 * You will need to download or clone the scripts to your computer.
 ![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select the copy icon next to the clone url](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/download.gif)
 
