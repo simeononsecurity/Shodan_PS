@@ -7,7 +7,7 @@ This is useful because it will let you know how many Scan and Query credits you 
 ## Prerequisites
 You will need to have downloaded and installed the script already. Please see [Downloading](https://github.com/makeitbetter/Shodan_PS#Download) and [Installing](https://github.com/makeitbetter/Shodan_PS#Install) for further instruction.
 ## Usage
-Run the script by entering the module name with a dash - and the api key in quotes
+Run the script by entering the module name with with the API parameter followed by the api key in quotes.
 ```
 PS C:\WINDOWS\system32> Get-ShodanAPIInfo -API "YourApiKeyGoeshere"
 
