@@ -11,7 +11,7 @@ You will need to have downloaded and installed the script already. Please see [D
 ## Usage
 Run the script by entering the module name with with the API parameter followed by the api key in quotes.
 ```
-PS C:\WINDOWS\system32> Get-ShodanClientIP -"ApiKeyStringGoesHere"
+PS C:\WINDOWS\system32> Get-ShodanClientIP -API "ApiKeyStringGoesHere"
 PS C:\WINDOWS\system32>
 "PublicIpAddressReturnedHere"
 ```
