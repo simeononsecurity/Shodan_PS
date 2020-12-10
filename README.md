@@ -13,9 +13,54 @@ Since we are using the API it is important to note that query credits are deduct
    The credits renew at the start of the month and 1 credit lets you download 100 results.
    As for scan credits, 1 scan credit lets you scan 1 IP, and they also renew at the start of the month.
    Please view the Shodan Help Center [HERE](https://help.shodan.io/the-basics/credit-types-explained) for full details.
+   
+## Table of Contents  
 
-## Download
+[Download Instructions](https://github.com/simeononsecurity/Shodan_PS#download)
+
+[Installation Instructions](https://github.com/simeononsecurity/Shodan_PS#install)
+
+Documentation for: [Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo)
+
+Documentation for: [Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders)
+
+Documentation for: [Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP)
+
+Documentation for: [Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain)
+
+Documentation for: [Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve)
+
+Documentation for: [Get-ShodanDNSReverse](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSReverse)
+
+Documentation for: [Get-ShodanExploitCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanExploitCount)
+
+Documentation for: [Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore)
+
+Documentation for: [Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
+
+Documentation for: [Get-ShodanHostIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostIP)
+
+Documentation for: [Get-ShodanHostSearch](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearch)
+
+Documentation for: [Get-ShodanHostSearchFacets](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearchFacets)
+
+Documentation for: [Get-HostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
+
+Documentation for: [Get-ShodanPorts](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanPorts)
+
+Documentation for: [Get-ShodanProfile](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanProfile)
+
+Documentation for: [Get-ShodanScanID](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanID)
+
+Documentation for: [Get-ShodanScanProtocols](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanProtocols)
+
+Documentation for: [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP)
+
+
+
 <a name="Download"></a>
+## Download
+
 You will need to clone or download the scripts to your computer.
 
 
@@ -92,4 +137,7 @@ Once the execution policy has been changed, you can run the following command to
 ```
 PS C:\Program Files\WindowsPowerShell\Modules\Shodan_PS> Set-ChildItem -Recurse *.psm1 | Import-Module
 ```
-Now you can run any of the scripts as a module via powershell. For detailed instructions please see the table of contents below:
+Now you can run any of the scripts as a module via powershell. 
+
+
+
