@@ -36,7 +36,7 @@ Since we are using the API it is important to note that query credits are deduct
 
 [Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore) Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot).
 
-[Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
+Documentation needed for: [Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
 
 Documentation needed for: [Get-ShodanHostIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostIP)
 
