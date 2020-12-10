@@ -44,7 +44,7 @@ Documentation needed for: [Get-ShodanHostSearch](https://github.com/simeononsecu
 
 Documentation needed for: [Get-ShodanHostSearchFacets](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearchFacets)
 
-Documentation needed for: [Get-HostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
+Documentation needed for: [Get-ShodanHostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
 
 Documentation needed for: [Get-ShodanPorts](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanPorts)
 
