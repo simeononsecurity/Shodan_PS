@@ -16,53 +16,41 @@ Since we are using the API it is important to note that query credits are deduct
    
 ## Table of Contents  
 
-[Download Instructions](https://github.com/simeononsecurity/Shodan_PS#download)
+- [Download Instructions](https://github.com/simeononsecurity/Shodan_PS#download)
 
-[Installation Instructions](https://github.com/simeononsecurity/Shodan_PS#install)
-
-[Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo) can return information about the API plan belonging to the given API key.
-
-[Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders) Shows the HTTP headers that your client sends when connecting to a webserver with.
-
-[Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP) Gets your current IP address as seen from the Internet.
-
-[Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain) Gets all the subdomains and other DNS entries for the given domain
-
-[Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve) Looks up the IP addresses for the provided hostname(s).
-
-[Get-ShodanDNSReverse](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSReverse) Looks up the hostnames that have been defined for the given list of IP addresses.
-
-[Get-ShodanExploitCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanExploitCount) Searches for exploits but only returns information about the total number of matches related to the search term, and optionally the exploit author, platform, port, source, or type.
-
-[Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore) Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot).
-
-Documentation needed for: [Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
-
-Documentation needed for: [Get-ShodanHostIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostIP)
-
-Documentation needed for: [Get-ShodanHostSearch](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearch)
-
-Documentation needed for: [Get-ShodanHostSearchFacets](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearchFacets)
-
-Documentation needed for: [Get-ShodanHostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
-
-Documentation needed for: [Get-ShodanPorts](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanPorts)
-
-Documentation needed for: [Get-ShodanProfile](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanProfile)
-
-Documentation needed for: [Get-ShodanScanID](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanID)
-
-Documentation needed for: [Get-ShodanScanProtocols](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanProtocols)
-
-Documentation needed for: [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP)
-
-
+- [Installation Instructions](https://github.com/simeononsecurity/Shodan_PS#install)
+- **Modules**
+ - [Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo) 
+  - can return information about the API plan belonging to the given API key.
+ - [Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders)
+  - Shows the HTTP headers that your client sends when connecting to a webserver with.
+ - [Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP) 
+  - Gets your current IP address as seen from the Internet.
+ - [Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain) 
+  - Gets all the subdomains and other DNS entries for the given domain
+ - [Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve) 
+  - Looks up the IP addresses for the provided hostname(s).
+ - [Get-ShodanDNSReverse](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSReverse) 
+  - Looks up the hostnames that have been defined for the given list of IP addresses.
+ - [Get-ShodanExploitCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanExploitCount) 
+  - Searches for exploits but only returns information about the total number of matches related to the search term, and optionally the exploit author, platform, port, source, or type.
+ - [Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore) 
+  - Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot).
+ - Documentation needed for: [Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
+ - Documentation needed for: [Get-ShodanHostIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostIP)
+ - Documentation needed for: [Get-ShodanHostSearch](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearch)
+ - Documentation needed for: [Get-ShodanHostSearchFacets](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearchFacets)
+ - Documentation needed for: [Get-ShodanHostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
+ - Documentation needed for: [Get-ShodanPorts](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanPorts)
+ - Documentation needed for: [Get-ShodanProfile](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanProfile)
+ - Documentation needed for: [Get-ShodanScanID](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanID)
+ - Documentation needed for: [Get-ShodanScanProtocols](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanProtocols)
+ - Documentation needed for: [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP)
 
 <a name="Download"></a>
 ## Download
 
 You will need to clone or download the scripts to your computer.
-
 
 You can use the Code dropdown menu on this repo page by scrolling up, or just copy and paste the following link:  [https://github.com/simeononsecurity/Shodan_PS.git](https://github.com/simeononsecurity/Shodan_PS.git)
 
@@ -91,12 +79,8 @@ Once you have the files, you need to copy the files to C:\Program Files\WindowsP
 
 ![Open file explorer path C:\Program Files\WindowsPowerShell\Modules , copy dialog says access is denied, click on continue to copy the files](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/copyasadmin.png)
 
-
-
-
 # Install
 <a name="Install"></a>
-
 
 To install the modules You will need to run a PowerShell window as administrator.
 There are two ways of doing this:
