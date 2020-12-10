@@ -23,17 +23,17 @@ Since we are using the API it is important to note that query credits are deduct
  - [Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo) 
   - can return information about the API plan belonging to the given API key.
  - [Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders)
-  - Shows the HTTP headers that your client sends when connecting to a webserver with.
+   - Shows the HTTP headers that your client sends when connecting to a webserver with.
  - [Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP) 
-  - Gets your current IP address as seen from the Internet.
+   - Gets your current IP address as seen from the Internet.
  - [Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain) 
-  - Gets all the subdomains and other DNS entries for the given domain
+   - Gets all the subdomains and other DNS entries for the given domain
  - [Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve) 
-  - Looks up the IP addresses for the provided hostname(s).
+   - Looks up the IP addresses for the provided hostname(s).
  - [Get-ShodanDNSReverse](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSReverse) 
-  - Looks up the hostnames that have been defined for the given list of IP addresses.
+   - Looks up the hostnames that have been defined for the given list of IP addresses.
  - [Get-ShodanExploitCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanExploitCount) 
-  - Searches for exploits but only returns information about the total number of matches related to the search term, and optionally the exploit author, platform, port, source, or type.
+   - Searches for exploits but only returns information about the total number of matches related to the search term, and optionally the exploit author, platform, port, source, or type.
  - [Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore) 
   - Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot).
  - Documentation needed for: [Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
