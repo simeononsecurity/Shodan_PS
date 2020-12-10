@@ -4,7 +4,7 @@ Look up the IP addresses for the provided hostname(s). Ex: Get-ShodanDNSResolve 
 
 
 ## Prerequisites
-You will need to have downloaded and installed the script already. Please see [Downloading](https://github.com/makeitbetter/Shodan_PS#Download) and [Installing](https://github.com/makeitbetter/Shodan_PS#Install) for further instruction.
+You will need to have downloaded and installed the script already. Please see [Downloading](https://github.com/simeononsecurity/Shodan_PS#Download) and [Installing](https://github.com/simeononsecurity/Shodan_PS#Install) for further instruction.
 
 ## Usage
 Run the script by entering the module name with the domains and api parameters both in quotes as seen below:
