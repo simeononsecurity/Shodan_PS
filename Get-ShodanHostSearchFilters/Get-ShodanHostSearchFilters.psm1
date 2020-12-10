@@ -14,13 +14,13 @@
 
 .PROJECTURI https://github.com/simeononsecurity/Shodan_PS
 
-.DESCRIPTION "Returns information about the API plan belonging to the given API key. Ex: Get-ShodanAPIInfo -API"
+.DESCRIPTION "This module returns a list of search filters that can be used in the search query. Ex: Get-ShodanHostSearchFilter -API"
 
 .RELEASENOTES
 Init
 
 #>
-function Get-ShodanAPIInfo {
+function Get-ShodanHostSearchFilters {
 param(
 [Parameter(Mandatory=$false, Position=0)]
 [string]$api
@@ -29,6 +29,6 @@ $apistring="?key=$api"
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
-        (Invoke-WebRequest "https://api.shodan.io/api-info$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/shodan/host/search/filters$apistring").content -Split {$_ -eq ',' -or $_ -eq '[' -or $_ -eq ']'}
     }
 }

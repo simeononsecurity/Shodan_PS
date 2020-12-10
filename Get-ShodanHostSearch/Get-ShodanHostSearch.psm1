@@ -14,13 +14,13 @@
 
 .PROJECTURI https://github.com/simeononsecurity/Shodan_PS
 
-.DESCRIPTION "This method behaves identical to "/shodan/host/search" with the only difference that this method does not return any host results, it only returns the total number of results that matched the query and any facet information that was requested. As a result this method does not consume query credits. Ex: Get-ShodanHostCount -Query [string] -Facet [string] -Minify $true -API"
+.DESCRIPTION "Search Shodan using the same query syntax as the website and use facets to get summary information for different properties. Ex: Get-ShodanHostSearch -Query [string] -Facet [string] -Minify $true -API"
 
 .RELEASENOTES
 Init
 
 #>
-function Get-ShodanHostCount {
+function Get-ShodanHostSearch {
 param(
 [Parameter(Mandatory=$false, Position=0)]
 [string]$api,
@@ -52,7 +52,7 @@ If (!$api){
     If (!$query){
         Write-Host "Please specify your query with -Query [string]"
     }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/shodan/host/search$apistring$querystring$facetstring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
     }
 }
 }

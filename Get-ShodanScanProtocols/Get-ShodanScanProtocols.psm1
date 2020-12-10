@@ -14,13 +14,13 @@
 
 .PROJECTURI https://github.com/simeononsecurity/Shodan_PS
 
-.DESCRIPTION "Returns information about the Shodan account linked to this API key. Ex: Get-ShodanProfile -API"
+.DESCRIPTION "List all protocols that can be used when performing on-demand Internet scans via Shodan. Ex: Get-ShodanScanProtocols -API [string]"
 
 .RELEASENOTES
 Init
 
 #>
-function Get-ShodanProfile {
+function Get-ShodanScanProtocols {
 param(
 [Parameter(Mandatory=$false, Position=0)]
 [string]$api
@@ -29,6 +29,6 @@ $apistring="?key=$api"
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
-    (Invoke-WebRequest "https://api.shodan.io/account/profile$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
-    }
+    (Invoke-WebRequest "https://api.shodan.io/shodan/protocols$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Protocol, Description
+}
 }

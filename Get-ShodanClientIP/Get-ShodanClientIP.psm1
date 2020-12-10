@@ -14,13 +14,13 @@
 
 .PROJECTURI https://github.com/simeononsecurity/Shodan_PS
 
-.DESCRIPTION "This module returns a list of search filters that can be used in the search query. Ex: Get-ShodanHostSearchFacets -API"
+.DESCRIPTION "Get your current IP address as seen from the Internet. Ex: Get-ShodanClientIP -API"
 
 .RELEASENOTES
 Init
 
 #>
-function Get-ShodanHostSearchFacets {
+function Get-ShodanClientIP {
 param(
 [Parameter(Mandatory=$false, Position=0)]
 [string]$api
@@ -29,6 +29,6 @@ $apistring="?key=$api"
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/host/search/facets$apistring").content -Split {$_ -eq ',' -or $_ -eq '[' -or $_ -eq ']'}
+        (Invoke-WebRequest "https://api.shodan.io/tools/myip$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'}
     }
 }

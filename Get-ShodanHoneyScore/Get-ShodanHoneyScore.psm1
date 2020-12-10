@@ -14,36 +14,27 @@
 
 .PROJECTURI https://github.com/simeononsecurity/Shodan_PS
 
-.DESCRIPTION "Search Shodan with IP address. Ex: Get-ShodanHostIP -IP 8.8.8.8 -Minify $true -API"
+.DESCRIPTION "Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot). Ex: Get-ShodanHoneyScore -IP 8.8.8.8 -API"
 
 .RELEASENOTES
 Init
 
 #>
-function Get-ShodanHostIP {
+function Get-ShodanHoneyScore {
 param(
 [Parameter(Mandatory=$false, Position=0)]
 [string]$api,
 [Parameter(Mandatory=$true, Position=1)]
-[string]$ip,
-[Parameter(Mandatory=$false, Position=2)]
-$minify
+[string]$ip
 )
 $apistring="?key=$api"
-$minify = [System.Convert]::ToBoolean($minify)
-If ($minify -eq $true -or $minify -eq 1){
-    $minifystring="&minify=true"
-}Else{
-    Write-Host "You chose full output"
-    $minifystring=""
-}
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$ip){
         Write-Host "Please specify an IP address with -IP [string]"
     }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/host/$ip$apistring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/labs/honeyscore/$ip$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'}
     }
 }
 }
