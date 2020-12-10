@@ -3,7 +3,7 @@ Get all the subdomains and other DNS entries for the given domain. Ex: Get-Shoda
 
 **Note:** Depending on the domain the output can be very long, you may want to consider redirecting the response to a file for ease of use.
 ## Prerequisites
-You will need to have downloaded and installed the script already. Please see [Downloading](https://github.com/makeitbetter/Shodan_PS#Download) and [Installing](https://github.com/makeitbetter/Shodan_PS#Install) for further instruction.
+You will need to have downloaded and installed the script already. Please see [Downloading](https://github.com/simeononsecurity/Shodan_PS#Download) and [Installing](https://github.com/simeononsecurity/Shodan_PS#Install) for further instruction.
 
 ## Usage
 Run the script by entering the module name with the domain parameter followed by the domain name and then the API parameter followed by the api key in quotes.
