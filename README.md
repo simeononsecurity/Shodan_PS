@@ -3,10 +3,8 @@
 A collection of PowerShell Modules for Interacting with the Shodan API
 
 **Notes:**
-
 - You'll need you Shodan API key, which can be found on your [Shodan Account](https://account.shodan.io/)
 - Examples of the APIs used in the modules may be found on the [Shodan Developers Page](https://developer.shodan.io/api)
-
 - Certain Modules may use scan or query credits Query Credits are used when you download data via the website, CLI or API (what these scripts do).
   Since we are using the API it is important to note that query credits are deducted if:
   1.  A search filter is used
@@ -16,7 +14,6 @@ A collection of PowerShell Modules for Interacting with the Shodan API
       Please view the Shodan Help Center [HERE](https://help.shodan.io/the-basics/credit-types-explained) for full details.
 
 ## Table of Contents
-
 - [Download Instructions](https://github.com/simeononsecurity/Shodan_PS#download)
 - [Installation Instructions](https://github.com/simeononsecurity/Shodan_PS#install)
 - **Modules**
