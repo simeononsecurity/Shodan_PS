@@ -20,41 +20,41 @@ Since we are using the API it is important to note that query credits are deduct
 
 [Installation Instructions](https://github.com/simeononsecurity/Shodan_PS#install)
 
-Documentation for: [Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo)
+[Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo) can return information about the API plan belonging to the given API key.
 
-Documentation for: [Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders)
+[Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders) Shows the HTTP headers that your client sends when connecting to a webserver with.
 
-Documentation for: [Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP)
+[Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP) Gets your current IP address as seen from the Internet.
 
-Documentation for: [Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain)
+[Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain) Gets all the subdomains and other DNS entries for the given domain
 
-Documentation for: [Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve)
+[Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve) Looks up the IP addresses for the provided hostname(s).
 
-Documentation for: [Get-ShodanDNSReverse](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSReverse)
+[Get-ShodanDNSReverse](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSReverse) Looks up the hostnames that have been defined for the given list of IP addresses.
 
-Documentation for: [Get-ShodanExploitCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanExploitCount)
+[Get-ShodanExploitCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanExploitCount) Searches for exploits but only returns information about the total number of matches related to the search term, and optionally the exploit author, platform, port, source, or type.
 
-Documentation for: [Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore)
+[Get-ShodanHoneyScore](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHoneyScore) Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot).
 
-Documentation for: [Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
+[Get-ShodanHostCount](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostCount)
 
-Documentation for: [Get-ShodanHostIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostIP)
+Documentation needed for: [Get-ShodanHostIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostIP)
 
-Documentation for: [Get-ShodanHostSearch](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearch)
+Documentation needed for: [Get-ShodanHostSearch](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearch)
 
-Documentation for: [Get-ShodanHostSearchFacets](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearchFacets)
+Documentation needed for: [Get-ShodanHostSearchFacets](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHostSearchFacets)
 
-Documentation for: [Get-HostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
+Documentation needed for: [Get-HostSearchFilters](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-HostSearchFilters)
 
-Documentation for: [Get-ShodanPorts](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanPorts)
+Documentation needed for: [Get-ShodanPorts](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanPorts)
 
-Documentation for: [Get-ShodanProfile](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanProfile)
+Documentation needed for: [Get-ShodanProfile](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanProfile)
 
-Documentation for: [Get-ShodanScanID](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanID)
+Documentation needed for: [Get-ShodanScanID](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanID)
 
-Documentation for: [Get-ShodanScanProtocols](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanProtocols)
+Documentation needed for: [Get-ShodanScanProtocols](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanProtocols)
 
-Documentation for: [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP)
+Documentation needed for: [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP)
 
 
 
@@ -66,7 +66,7 @@ You will need to clone or download the scripts to your computer.
 
 You can use the Code dropdown menu on this repo page by scrolling up, or just copy and paste the following link:  [https://github.com/simeononsecurity/Shodan_PS.git](https://github.com/simeononsecurity/Shodan_PS.git)
 
-![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select the copy icon next to the clone url](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/download.gif)
+![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select the copy icon next to the clone url](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/download.gif)
 
 For this example we will be cloning the repo within Git Bash, after clicking on the clipboard icon as seen above, we can type git clone and right click the Git Bash window to select paste from the dropdown menu:
 ```
@@ -76,20 +76,20 @@ For detailed instructions on cloning please view [the github documentation.](htt
 
 Once you have the files, you need to copy the files to C:\Program Files\WindowsPowerShell\Modules, doing this will prompt dialog saying that access is denied, click continue to finish copying the files to this location and then proceed to the installation instructions [here](#Install)
 
-![Open file explorer path C:\Program Files\WindowsPowerShell\Modules , copy dialog says access is denied, click on continue to copy the files](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/copyasadmin.png)
+![Open file explorer path C:\Program Files\WindowsPowerShell\Modules , copy dialog says access is denied, click on continue to copy the files](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/copyasadmin.png)
 
 
 **OR**
 
 You can use the Code dropdown menu on this repo page by scrolling up, or just click on the following link:
 [https://github.com/simeononsecurity/Shodan_PS/archive/main.zip](https://github.com/simeononsecurity/Shodan_PS/archive/main.zip)
-![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select Download Zip option](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/downloadzip.gif)
+![On the project page click the code button which opens the dropdown menu containing clone, Open with Github Desktop, Download Zip. Select Download Zip option](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/downloadzip.gif)
 
 Unzip main.zip by right clicking on the file and selecting extract here from the dropdown menu.
 
 Once you have the files, you need to copy the files to C:\Program Files\WindowsPowerShell\Modules, doing this will prompt dialog saying that access is denied, click continue to finish copying the files to this location and then proceed to the installation instructions [here](#Install)
 
-![Open file explorer path C:\Program Files\WindowsPowerShell\Modules , copy dialog says access is denied, click on continue to copy the files](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/copyasadmin.png)
+![Open file explorer path C:\Program Files\WindowsPowerShell\Modules , copy dialog says access is denied, click on continue to copy the files](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/copyasadmin.png)
 
 
 
@@ -103,13 +103,13 @@ There are two ways of doing this:
 
 The first way is by right clicking the PowerShell icon on the Desktop and selecting Run as Administrator from the dropdown menu.
 
-![Right click the powershell icon on the Desktop and select run as administrator from dropdown menu](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/RcRunAsAdmin.gif)
+![Right click the powershell icon on the Desktop and select run as administrator from dropdown menu](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/RcRunAsAdmin.gif)
 
 **OR**
 
 By typing p (or however many characters it takes PowerShell to show up) into the search bar and clicking on Run as Administrator.
 
-![type p in the search bar and when powershell comes up click on run as administrator](https://github.com/makeitbetter/Shodan_PS/blob/main/demo/SearchBarRunAsAdmin.gif)
+![type p in the search bar and when powershell comes up click on run as administrator](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/SearchBarRunAsAdmin.gif)
 
 
 You will need to be in the directory that you copied the scripts to.
