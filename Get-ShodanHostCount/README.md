@@ -10,8 +10,6 @@ Where facet is optional and is a comma-separated list of properties to get summa
 Facet uses additional option to provide filters inside the search query using a "property:value" format.
  
 
-Both options
-
 
 ## Prerequisites
 You will need to have downloaded and installed the script already. Please see [Downloading](https://github.com/simeononsecurity/Shodan_PS#Download) and [Installing](https://github.com/simeononsecurity/Shodan_PS#Install) for further instruction.
