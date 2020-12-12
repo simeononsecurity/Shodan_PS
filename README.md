@@ -18,7 +18,7 @@ A collection of PowerShell Modules for Interacting with the Shodan API
 - [Installation Instructions](https://github.com/simeononsecurity/Shodan_PS#install)
 - **Modules**
   - [Get-ShodanAPIInfo](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanAPIInfo) - can return information about the API plan belonging to the given API key.
-  - [Get-ShodanHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanHTTPHeaders) - Shows the HTTP headers that your client sends when connecting to a webserver with.
+  - [Get-ShodanClientHTTPHeaders](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientHTTPHeaders) - Shows the HTTP headers that your client sends when connecting to a webserver with.
   - [Get-ShodanClientIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanClientIP) - Gets your current IP address as seen from the Internet.
   - [Get-ShodanDNSDomain](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSDomain) - Gets all the subdomains and other DNS entries for the given domain
   - [Get-ShodanDNSResolve](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanDNSResolve) - Looks up the IP addresses for the provided hostname(s).
