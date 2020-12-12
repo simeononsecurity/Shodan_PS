@@ -44,7 +44,7 @@ If (!$facet){
     Write-Host "You chose no facet"
     $facetstring = ""
 }Else{
-    $facetstring = "&facet=$facet"
+    $facetstring = "&facets=$facet"
 }
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
