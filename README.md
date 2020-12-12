@@ -34,7 +34,7 @@ A collection of PowerShell Modules for Interacting with the Shodan API
   - [Get-ShodanProfile](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanProfile) - Returns information about the Shodan account linked to this API key
   - [Get-ShodanScanID](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanID) - Check the progress of a previously submitted scan request
   - [Get-ShodanScanProtocols](https://github.com/simeononsecurity/Shodan_PS/tree/main/Get-ShodanScanProtocols) - List all protocols that can be used when performing on-demand Internet scans via Shodan
-  - Documentation needed for: [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP)
+  - [Set-ShodanScanIP](https://github.com/simeononsecurity/Shodan_PS/tree/main/Set-ShodanScanIP) - Use this module to request Shodan to crawl a network.
 
 <a name="Download"></a>
 
