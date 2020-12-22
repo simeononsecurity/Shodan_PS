@@ -27,6 +27,7 @@ param(
 [Parameter(Mandatory=$true, Position=1)]
 [string]$ips
 )
+$apistring = "?key=$api"
 If (!$api){
     Write-Host "Please set the 'api' variable to your shodan API key."
 }Else {
