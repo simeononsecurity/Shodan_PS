@@ -62,7 +62,7 @@ Data             Value
 
 To redirect the output to a file in your current path, simply add the right angle bracket to the end of the command followed by the name of the output file. 
 ```
-PS C:\WINDOWS\system32> Get-ShodanDNSdomain -domain exampledomain.com -API "ApiKeyGoesHere" > output.txt
+PS C:\WINDOWS\system32> Get-ShodanHostSearch -Query "ssl" -Facet "ssl.cipher:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256" -Minify $true -API "ApiKeyGoesHere" > output.txt
 ```
 
 To learn more about redirection please read the [documentation.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_redirection?view=powershell-7.1#:~:text=Use%20the%20Out%2DFile%20cmdlet,sends%20it%20to%20the%20pipeline.)

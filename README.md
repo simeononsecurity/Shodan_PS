@@ -97,7 +97,7 @@ PS C:\Program Files\WindowsPowerShell\Modules\Shodan_PS>
 
 On Windows client computers we need to change the PowerShell execution policy which is Restricted by default.
 
-For more information please read this [Microsoft documentation.](https:/go.microsoft.com/fwlink/?LinkID=135170)
+For more information please read this [Microsoft documentation.](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1)
 
 Run the following command to set the policy to RemoteSigned and enter y to select that Yes you want to change the policy.
 
