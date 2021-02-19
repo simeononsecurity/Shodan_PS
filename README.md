@@ -114,7 +114,7 @@ change the execution policy?
 Once the execution policy has been changed, you can run the following command to Import the modules.
 
 ```
-PS C:\Program Files\WindowsPowerShell\Modules\Shodan_PS> Set-ChildItem -Recurse *.psm1 | Import-Module
+PS C:\Program Files\WindowsPowerShell\Modules\Shodan_PS> Get-ChildItem -Recurse *.psm1 | Import-Module
 ```
 
 Now you can run any of the scripts as a module via powershell.
