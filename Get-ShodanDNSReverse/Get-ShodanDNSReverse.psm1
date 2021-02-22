@@ -29,10 +29,10 @@ param(
 )
 $apistring="&key=$api"
 If (!$api){
-    Write-Host "Please set the 'api' variable to your shodan API key."
+    Write-Output "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$ips){
-        Write-Host "Please specify ips addresses with -ips [string]"
+        Write-Output "Please specify ips addresses with -ips [string]"
     }Else {
         (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/reverse?ips=$ips$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames IP, Domain
     }

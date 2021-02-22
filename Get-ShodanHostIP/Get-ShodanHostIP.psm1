@@ -34,14 +34,14 @@ $minify = [System.Convert]::ToBoolean($minify)
 If ($minify -eq $true -or $minify -eq 1){
     $minifystring="&minify=true"
 }Else{
-    Write-Host "You chose full output"
+    Write-Output "You chose full output"
     $minifystring=""
 }
 If (!$api){
-    Write-Host "Please set the 'api' variable to your shodan API key."
+    Write-Output "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$ip){
-        Write-Host "Please specify an IP address with -IP [string]"
+        Write-Output "Please specify an IP address with -IP [string]"
     }Else {
         (Invoke-WebRequest "https://api.shodan.io/shodan/host/$ip$apistring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
     }

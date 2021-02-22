@@ -37,20 +37,20 @@ $minify = [System.Convert]::ToBoolean($minify)
 If ($minify -eq $true -or $minify -eq 1){
     $minifystring="&minify=true"
 }Else{
-    Write-Host "You chose full output"
+    Write-Output "You chose full output"
     $minifystring="&minify=false"
 }
 If (!$facet){
-    Write-Host "You chose no facet"
+    Write-Output "You chose no facet"
     $facetstring = ""
 }Else{
     $facetstring = "&facet=$facet"
 }
 If (!$api){
-    Write-Host "Please set the 'api' variable to your shodan API key."
+    Write-Output "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$query){
-        Write-Host "Please specify your query with -Query [string]"
+        Write-Output "Please specify your query with -Query [string]"
     }Else {
         (Invoke-WebRequest "https://api.shodan.io/shodan/host/search$apistring$querystring$facetstring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
     }

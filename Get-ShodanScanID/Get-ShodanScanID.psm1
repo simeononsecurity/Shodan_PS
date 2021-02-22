@@ -29,10 +29,10 @@ param(
 )
 $apistring="?key=$api"
 If (!$api){
-    Write-Host "Please set the 'api' variable to your shodan API key."
+    Write-Output "Please set the 'api' variable to your shodan API key."
 }Else {
     If (!$id){
-        Write-Host "Please specify a Shodan Scan ID with -ID [string]"
+        Write-Output "Please specify a Shodan Scan ID with -ID [string]"
     }Else {
         (Invoke-WebRequest "https://api.shodan.io/shodan/scan/$id$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
     }
