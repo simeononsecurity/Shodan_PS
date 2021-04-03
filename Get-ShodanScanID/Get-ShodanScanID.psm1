@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -34,7 +34,7 @@ If (!$api){
     If (!$id){
         Write-Output "Please specify a Shodan Scan ID with -ID [string]"
     }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/scan/$id$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/shodan/scan/$id$apistring").content | ConvertFrom-Json
     }
 }
 }
