@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -52,7 +52,7 @@ If (!$api){
     If (!$query){
         Write-Output "Please specify your query with -Query [string]"
     }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content | ConvertFrom-Json
     }
 }
 }
