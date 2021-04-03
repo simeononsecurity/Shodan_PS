@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -34,7 +34,7 @@ If (!$api){
     If (!$ips){
         Write-Output "Please specify ips addresses with -ips [string]"
     }Else {
-        (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/reverse?ips=$ips$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames IP, Domain
+        (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/reverse?ips=$ips$apistring").content | ConvertFrom-Json
     }
 }
 }
