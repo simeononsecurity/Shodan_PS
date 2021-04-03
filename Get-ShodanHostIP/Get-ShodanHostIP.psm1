@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -43,7 +43,7 @@ If (!$api){
     If (!$ip){
         Write-Output "Please specify an IP address with -IP [string]"
     }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/host/$ip$apistring$minifystring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest "https://api.shodan.io/shodan/host/$ip$apistring$minifystring").content | ConvertFrom-Json
     }
 }
 }
