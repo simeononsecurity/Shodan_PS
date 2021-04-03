@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -34,7 +34,6 @@ If (!$api){
     If (!$domain){
         Write-Output "Please specify an domain address with -domain [string]"
     }Else {
-        (Invoke-WebRequest "https://api.shodan.io/dns/domain/$domain$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
-    }
+        (Invoke-WebRequest "https://api.shodan.io/dns/domain/$domain$apistring").content | ConvertFrom-Json
 }
 }
