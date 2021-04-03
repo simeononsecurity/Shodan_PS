@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -35,7 +35,7 @@ If (!$api){
         Write-Output "Please specify IPs address(es) with -IPs [string]"
     }Else {
         $ipstring = "&ips=$ips"
-        (Invoke-WebRequest -Method 'POST' "https://api.shodan.io/shodan/scan$apistring$ipstring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Data, Value
+        (Invoke-WebRequest -Method 'POST' "https://api.shodan.io/shodan/scan$apistring$ipstring").content | ConvertFrom-Json
     }
 }
 }
