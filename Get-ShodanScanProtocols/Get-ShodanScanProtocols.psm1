@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 
 
@@ -29,6 +29,6 @@ $apistring="?key=$api"
 If (!$api){
     Write-Output "Please set the 'api' variable to your shodan API key."
 }Else {
-    (Invoke-WebRequest "https://api.shodan.io/shodan/protocols$apistring").content -Split {$_ -eq ',' -or $_ -eq '{' -or $_ -eq '}'} | ConvertFrom-String -Delimiter ":" -PropertyNames Protocol, Description
+    (Invoke-WebRequest "https://api.shodan.io/shodan/protocols$apistring").content | ConvertFrom-Json
 }
 }
