@@ -37,3 +37,4 @@ If (!$api){
         (Invoke-WebRequest "https://api.shodan.io/dns/domain/$domain$apistring").content | ConvertFrom-Json
 }
 }
+}
