@@ -21,20 +21,22 @@ Init
 
 #>
 function Get-ShodanDNSReverse {
-param(
-[Parameter(Mandatory=$false, Position=0)]
-[string]$api,
-[Parameter(Mandatory=$true, Position=1)]
-[string]$ips
-)
-$apistring="&key=$api"
-If (!$api){
-    Write-Output "Please set the 'api' variable to your shodan API key."
-}Else {
-    If (!$ips){
-        Write-Output "Please specify ips addresses with -ips [string]"
-    }Else {
-        (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/reverse?ips=$ips$apistring").content | ConvertFrom-Json
+    param(
+        [Parameter(Mandatory = $false, Position = 0)]
+        [string]$api,
+        [Parameter(Mandatory = $true, Position = 1)]
+        [string]$ips
+    )
+    $apistring = "&key=$api"
+    If (!$api) {
+        Write-Output "Please set the 'api' variable to your shodan API key."
     }
-}
+    Else {
+        If (!$ips) {
+            Write-Output "Please specify ips addresses with -ips [string]"
+        }
+        Else {
+            (Invoke-WebRequest -UseBasicParsing "https://api.shodan.io/dns/reverse?ips=$ips$apistring").content | ConvertFrom-Json
+        }
+    }
 }

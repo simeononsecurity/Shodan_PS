@@ -21,14 +21,15 @@ Init
 
 #>
 function Get-ShodanPorts {
-param(
-[Parameter(Mandatory=$true, Position=0)]
-[string]$api
-)
-$apistring="?key=$api"
-If (!$api){
-    Write-Output "Please set the 'api' variable to your shodan API key."
-}Else {
-    (Invoke-WebRequest "https://api.shodan.io/shodan/ports$apistring").content | ConvertFrom-Json
+    param(
+        [Parameter(Mandatory = $true, Position = 0)]
+        [string]$api
+    )
+    $apistring = "?key=$api"
+    If (!$api) {
+        Write-Output "Please set the 'api' variable to your shodan API key."
+    }
+    Else {
+        (Invoke-WebRequest "https://api.shodan.io/shodan/ports$apistring").content | ConvertFrom-Json
     }
 }

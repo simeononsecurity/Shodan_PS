@@ -21,20 +21,22 @@ Init
 
 #>
 function Get-ShodanHoneyScore {
-param(
-[Parameter(Mandatory=$false, Position=0)]
-[string]$api,
-[Parameter(Mandatory=$true, Position=1)]
-[string]$ip
-)
-$apistring="?key=$api"
-If (!$api){
-    Write-Output "Please set the 'api' variable to your shodan API key."
-}Else {
-    If (!$ip){
-        Write-Output "Please specify an IP address with -IP [string]"
-    }Else {
-        (Invoke-WebRequest "https://api.shodan.io/labs/honeyscore/$ip$apistring").content | ConvertFrom-Json
+    param(
+        [Parameter(Mandatory = $false, Position = 0)]
+        [string]$api,
+        [Parameter(Mandatory = $true, Position = 1)]
+        [string]$ip
+    )
+    $apistring = "?key=$api"
+    If (!$api) {
+        Write-Output "Please set the 'api' variable to your shodan API key."
     }
-}
+    Else {
+        If (!$ip) {
+            Write-Output "Please specify an IP address with -IP [string]"
+        }
+        Else {
+            (Invoke-WebRequest "https://api.shodan.io/labs/honeyscore/$ip$apistring").content | ConvertFrom-Json
+        }
+    }
 }

@@ -21,38 +21,42 @@ Init
 
 #>
 function Get-ShodanHostCount {
-param(
-[Parameter(Mandatory=$false, Position=0)]
-[string]$api,
-[Parameter(Mandatory=$true, Position=1)]
-[string]$query,
-[Parameter(Mandatory=$false, Position=2)]
-[string]$facet,
-[Parameter(Mandatory=$false, Position=3)]
-$minify
-)
-$apistring="?key=$api"
-$querystring = "&query=$query"
-$minify = [System.Convert]::ToBoolean($minify)
-If ($minify -eq $true -or $minify -eq 1){
-    $minifystring="&minify=true"
-}Else{
-    Write-Output "You chose full output"
-    $minifystring="&minify=false"
-}
-If (!$facet){
-    Write-Output "You chose no facet"
-    $facetstring = ""
-}Else{
-    $facetstring = "&facets=$facet"
-}
-If (!$api){
-    Write-Output "Please set the 'api' variable to your shodan API key."
-}Else {
-    If (!$query){
-        Write-Output "Please specify your query with -Query [string]"
-    }Else {
-        (Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content | ConvertFrom-Json
+    param(
+        [Parameter(Mandatory = $false, Position = 0)]
+        [string]$api,
+        [Parameter(Mandatory = $true, Position = 1)]
+        [string]$query,
+        [Parameter(Mandatory = $false, Position = 2)]
+        [string]$facet,
+        [Parameter(Mandatory = $false, Position = 3)]
+        $minify
+    )
+    $apistring = "?key=$api"
+    $querystring = "&query=$query"
+    $minify = [System.Convert]::ToBoolean($minify)
+    If ($minify -eq $true -or $minify -eq 1) {
+        $minifystring = "&minify=true"
     }
-}
+    Else {
+        Write-Output "You chose full output"
+        $minifystring = "&minify=false"
+    }
+    If (!$facet) {
+        Write-Output "You chose no facet"
+        $facetstring = ""
+    }
+    Else {
+        $facetstring = "&facets=$facet"
+    }
+    If (!$api) {
+        Write-Output "Please set the 'api' variable to your shodan API key."
+    }
+    Else {
+        If (!$query) {
+            Write-Output "Please specify your query with -Query [string]"
+        }
+        Else {
+            (Invoke-WebRequest "https://api.shodan.io/shodan/host/count$apistring$querystring$facetstring$minifystring").content | ConvertFrom-Json
+        }
+    }
 }
