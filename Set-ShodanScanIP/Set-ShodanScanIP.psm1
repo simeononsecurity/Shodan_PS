@@ -2,7 +2,7 @@
 
 .VERSION 1.1
 
-.GUID 
+.GUID 1c824d4b-e63e-4745-b2bb-f98eab7211bd
 
 .AUTHOR simeononsecurity.ch
 
