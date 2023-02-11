@@ -73,8 +73,10 @@ Once you have the files, you need to copy the files to C:\Program Files\WindowsP
 ![Open file explorer path C:\Program Files\WindowsPowerShell\Modules , copy dialog says access is denied, click on continue to copy the files](https://github.com/simeononsecurity/Shodan_PS/blob/main/demo/copyasadmin.png?raw=true)
 
 # Install
+<a name="Install"></a>
 
 ## PowerShell Gallery:
+
 ```
 Install-Module -Name Get-ShodanAPIInfo
 Install-Module -Name Get-ShodanClientHTTPHeaders
@@ -98,8 +100,6 @@ Install-Module -Name Set-ShodanScanIP
 ```
 
 ## Manual Instal:
-<a name="Install"></a>
-
 To install the modules You will need to run a PowerShell window as administrator.
 There are two ways of doing this:
 
