@@ -74,6 +74,30 @@ Once you have the files, you need to copy the files to C:\Program Files\WindowsP
 
 # Install
 
+## PowerShell Gallery:
+```
+Install-Module -Name Get-ShodanAPIInfo
+Install-Module -Name Get-ShodanClientHTTPHeaders
+Install-Module -Name Get-ShodanClientIP
+Install-Module -Name Get-ShodanDNSDomain
+Install-Module -Name Get-ShodanDNSResolve
+Install-Module -Name Get-ShodanDNSReverse
+Install-Module -Name Get-ShodanExploitCount
+Install-Module -Name Get-ShodanExploitSearch
+Install-Module -Name Get-ShodanHoneyScore
+Install-Module -Name Get-ShodanHostCount
+Install-Module -Name Get-ShodanHostIP
+Install-Module -Name Get-ShodanHostSearch
+Install-Module -Name Get-ShodanHostSearchFacets
+Install-Module -Name Get-ShodanHostSearchFilters
+Install-Module -Name Get-ShodanPorts
+Install-Module -Name Get-ShodanProfile
+Install-Module -Name Get-ShodanScanID
+Install-Module -Name Get-ShodanScanProtocols
+Install-Module -Name Set-ShodanScanIP
+```
+
+## Manual Instal:
 <a name="Install"></a>
 
 To install the modules You will need to run a PowerShell window as administrator.
@@ -120,3 +144,9 @@ PS C:\Program Files\WindowsPowerShell\Modules\Shodan_PS> Get-ChildItem -Recurse 
 ```
 
 Now you can run any of the scripts as a module via powershell.
+
+
+#
+#### Links:
+[github.com/simeononsecurity](https://github.com/simeononsecurity)
+[simeononsecurity.ch](https://simeononsecurity.ch)
