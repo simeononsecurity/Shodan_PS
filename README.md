@@ -99,7 +99,7 @@ Install-Module -Name Get-ShodanScanProtocols
 Install-Module -Name Set-ShodanScanIP
 ```
 
-## Manual Instal:
+## Manual Install:
 To install the modules You will need to run a PowerShell window as administrator.
 There are two ways of doing this:
 
