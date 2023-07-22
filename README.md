@@ -145,8 +145,13 @@ PS C:\Program Files\WindowsPowerShell\Modules\Shodan_PS> Get-ChildItem -Recurse 
 
 Now you can run any of the scripts as a module via powershell.
 
+<a href="https://simeononsecurity.ch" target="_blank" rel="noopener noreferrer">
+  <h2>Explore the World of Cybersecurity</h2>
+  <img src="https://simeononsecurity.ch/img/banner.png" alt="SimeonOnSecurity Logo" width="300" height="300">
+</a>
 
-#
 #### Links:
 [github.com/simeononsecurity](https://github.com/simeononsecurity)
 [simeononsecurity.ch](https://simeononsecurity.ch)
+
+
