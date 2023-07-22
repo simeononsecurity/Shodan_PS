@@ -151,7 +151,7 @@ Now you can run any of the scripts as a module via powershell.
 </a>
 
 #### Links:
-[github.com/simeononsecurity](https://github.com/simeononsecurity)
-[simeononsecurity.ch](https://simeononsecurity.ch)
+- [github.com/simeononsecurity](https://github.com/simeononsecurity)
+- [simeononsecurity.ch](https://simeononsecurity.ch)
 
 
