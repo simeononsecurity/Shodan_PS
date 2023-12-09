@@ -1,6 +1,6 @@
 @{
     RootModule = 'Get-ShodanAPIInfo.psm1'
-    ModuleVersion = '1.1.2'
+    ModuleVersion = '1.1.3'
     GUID = '73c8593a-5531-4433-9733-d56cbc4c5a77'
     Author = 'SimeonOnSecurity'
     CompanyName = 'SimeonOnSecurity'

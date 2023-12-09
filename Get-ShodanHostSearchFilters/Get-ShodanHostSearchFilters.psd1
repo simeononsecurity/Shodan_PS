@@ -1,8 +1,8 @@
 @{
     RootModule = 'Get-ShodanHostSearchFilters.psm1'
-    ModuleVersion = '1.1.2'
+    ModuleVersion = '1.1.3'
     GUID = '6c2f2dcd-eec9-40e9-aeca-24fe55912b80'
-    Author = 'simeononsecurity.ch'
+    Author = 'SimeonOnSecurity'
     CompanyName = 'SimeonOnSecurity'
     Copyright = '2020 SimeonOnSecurity. All rights reserved.'
     Description = 'This module returns a list of search filters that can be used in the search query. Ex: Get-ShodanHostSearchFilter -API'
