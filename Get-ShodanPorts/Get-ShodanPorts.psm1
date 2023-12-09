@@ -1,10 +1,10 @@
 <#PSScriptInfo
 
-.VERSION 1.1
+.VERSION 1.1.2
 
 .GUID 14061b50-2169-4329-b8f4-bf2002c33950
 
-.AUTHOR simeononsecurity.ch
+.AUTHOR SimeonOnSecurity
 
 .COMPANYNAME SimeonOnSecurity
 
@@ -12,7 +12,7 @@
 
 .TAGS Shodan PowerShell Modules ShodanPS cmdlet
 
-.PROJECTURI https://github.com/simeononsecurity/Shodan_PS
+.PROJECTURI https://simeononsecurity.com/github/shodan-powershell/
 
 .DESCRIPTION "List all ports that Shodan is crawling on the Internet. Ex: Get-ShodanPorts -API"
 

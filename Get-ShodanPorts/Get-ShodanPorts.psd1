@@ -1,6 +1,6 @@
 @{
     RootModule = 'Get-ShodanPorts.psm1'
-    ModuleVersion = '1.1'
+    ModuleVersion = '1.1.2'
     GUID = '14061b50-2169-4329-b8f4-bf2002c33950'
     Author = 'simeononsecurity.ch'
     CompanyName = 'SimeonOnSecurity'
@@ -9,7 +9,7 @@
     PrivateData = @{
         PSData = @{
             Tags = 'Shodan', 'PowerShell', 'Modules', 'ShodanPS', 'cmdlet'
-            ProjectUri = 'https://github.com/simeononsecurity/Shodan_PS'
+            ProjectUri = 'https://simeononsecurity.com/github/shodan-powershell/'
             ReleaseNotes = 'Init'
         }
     }

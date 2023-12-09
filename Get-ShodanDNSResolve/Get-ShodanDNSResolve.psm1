@@ -1,10 +1,10 @@
 <#PSScriptInfo
 
-.VERSION 1.1
+.VERSION 1.1.2
 
 .GUID f7087ae2-07bf-4509-b04f-343cf1f28586
 
-.AUTHOR simeononsecurity.ch
+.AUTHOR SimeonOnSecurity
 
 .COMPANYNAME SimeonOnSecurity
 
@@ -12,7 +12,7 @@
 
 .TAGS Shodan PowerShell Modules ShodanPS cmdlet
 
-.PROJECTURI https://github.com/simeononsecurity/Shodan_PS
+.PROJECTURI https://simeononsecurity.com/github/shodan-powershell/
 
 .DESCRIPTION "Look up the IP address for the provided list of hostnames. Ex: Get-ShodanDNSResolve -domains "google.com,bing.com" -API"
 

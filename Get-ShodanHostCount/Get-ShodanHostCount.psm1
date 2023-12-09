@@ -1,10 +1,10 @@
 <#PSScriptInfo
 
-.VERSION 1.1
+.VERSION 1.1.2
 
 .GUID 1bd66607-cb01-43e1-b447-857245506eef
 
-.AUTHOR simeononsecurity.ch
+.AUTHOR SimeonOnSecurity
 
 .COMPANYNAME SimeonOnSecurity
 
@@ -12,7 +12,7 @@
 
 .TAGS Shodan PowerShell Modules ShodanPS cmdlet
 
-.PROJECTURI https://github.com/simeononsecurity/Shodan_PS
+.PROJECTURI https://simeononsecurity.com/github/shodan-powershell/
 
 .DESCRIPTION "This method behaves identical to "/shodan/host/search" with the only difference that this method does not return any host results, it only returns the total number of results that matched the query and any facet information that was requested. As a result this method does not consume query credits. Ex: Get-ShodanHostCount -Query [string] -Facet [string] -Minify $true -API"
 

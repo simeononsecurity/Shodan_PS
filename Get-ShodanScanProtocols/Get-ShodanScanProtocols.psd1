@@ -1,6 +1,6 @@
 @{
     RootModule = 'Get-ShodanScanProtocols.psm1'
-    ModuleVersion = '1.1'
+    ModuleVersion = '1.1.2'
     GUID = '302aeb93-2701-4792-89a8-4fbfd3906a9d'
     Author = 'simeononsecurity.ch'
     CompanyName = 'SimeonOnSecurity'
@@ -9,7 +9,7 @@
     PrivateData = @{
         PSData = @{
             Tags = 'Shodan', 'PowerShell', 'Modules', 'ShodanPS', 'cmdlet'
-            ProjectUri = 'https://github.com/simeononsecurity/Shodan_PS'
+            ProjectUri = 'https://simeononsecurity.com/github/shodan-powershell/'
             ReleaseNotes = 'Init'
         }
     }

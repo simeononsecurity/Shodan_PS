@@ -1,10 +1,10 @@
 <#PSScriptInfo
 
-.VERSION 1.1
+.VERSION 1.1.2
 
 .GUID 33b11412-9732-4a8b-945a-691baa913c62
 
-.AUTHOR simeononsecurity.ch
+.AUTHOR SimeonOnSecurity
 
 .COMPANYNAME SimeonOnSecurity
 
@@ -12,7 +12,7 @@
 
 .TAGS Shodan PowerShell Modules ShodanPS cmdlet
 
-.PROJECTURI https://github.com/simeononsecurity/Shodan_PS
+.PROJECTURI https://simeononsecurity.com/github/shodan-powershell/
 
 .DESCRIPTION "Calculates a honeypot probability score ranging from 0 (not a honeypot) to 1.0 (is a honeypot). Ex: Get-ShodanHoneyScore -IP 8.8.8.8 -API"
 

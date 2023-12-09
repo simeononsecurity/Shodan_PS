@@ -1,6 +1,6 @@
 @{
     RootModule = 'Get-ShodanClientHTTPHeaders.psm1'
-    ModuleVersion = '1.1'
+    ModuleVersion = '1.1.2'
     GUID = '0fc72150-9215-40e4-be76-a4485656a8a0'
     Author = 'simeononsecurity.ch'
     CompanyName = 'SimeonOnSecurity'
@@ -10,7 +10,7 @@
     PrivateData = @{
         PSData = @{
             Tags = 'Shodan', 'PowerShell', 'Modules', 'ShodanPS', 'cmdlet'
-            ProjectUri = 'https://github.com/simeononsecurity/Shodan_PS'
+            ProjectUri = 'https://simeononsecurity.com/github/shodan-powershell/'
             ReleaseNotes = 'Init'
         }
     }

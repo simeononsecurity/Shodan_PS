@@ -1,6 +1,6 @@
 @{
     RootModule = 'Set-ShodanScanIP.psm1'
-    ModuleVersion = '1.1'
+    ModuleVersion = '1.1.2'
     GUID = '1c824d4b-e63e-4745-b2bb-f98eab7211bd'
     Author = 'simeononsecurity.ch'
     CompanyName = 'SimeonOnSecurity'
@@ -9,7 +9,7 @@
     PrivateData = @{
         PSData = @{
             Tags = 'Shodan', 'PowerShell', 'Modules', 'ShodanPS', 'cmdlet'
-            ProjectUri = 'https://github.com/simeononsecurity/Shodan_PS'
+            ProjectUri = 'https://simeononsecurity.com/github/shodan-powershell/'
             ReleaseNotes = 'Init'
         }
     }
